@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains code for a Personal Website for the account holder, currently written in React.
+
+# Project Planning
+Kanban board: <a href="https://trello.com/b/s6NiXBc4/personal-website">Trello - Personal Website for Joshua Zimmerman</a><br>
+Journey Map: TBA<br>
 
 ## Available Scripts
 
