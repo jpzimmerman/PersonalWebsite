@@ -4,9 +4,9 @@ export default function Navbar() {
       <a href="/" className="site-nav">
         BlackRose
       </a>
-      <ul style={{ display: "inline-flex", padding: "1% 1% 1% 1%" }}>
-        <li>Projects</li>
+      <ul style={{ display: "inline-flex", padding: "0rem" }}>
         <li>About</li>
+        <li>Projects</li>
         <li>Blog</li>
       </ul>
     </nav>
