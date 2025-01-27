@@ -4,6 +4,7 @@ This repository contains code for a Personal Website for the account holder, cur
 
 # Project Planning
 Kanban board: <a href="https://trello.com/b/s6NiXBc4/personal-website">Trello - Personal Website for Joshua Zimmerman</a><br>
+Wireframe: <a href="https://www.figma.com/design/uHv20fOZW9Rzg35Cb8CQyM/Portfolio-Website?node-id=0-1&p=f">Figma - Personal Website Wireframe</a><br>
 Journey Map: TBA<br>
 
 ## Available Scripts
