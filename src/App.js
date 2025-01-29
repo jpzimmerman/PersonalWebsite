@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
       <Routes>
         <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </html>
   );
