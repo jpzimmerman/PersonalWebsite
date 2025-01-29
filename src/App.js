@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import { Routes, Route } from "react-router-dom";
 
 // import logo from './logo.svg';
 // import './App.css';
@@ -45,6 +46,10 @@ function App() {
           <p>Joshua Zimmerman</p>
         </body>
       </div>
+
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
     </html>
   );
 }

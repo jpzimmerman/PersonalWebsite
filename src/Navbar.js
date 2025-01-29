@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <nav className="nav">
@@ -5,7 +7,9 @@ export default function Navbar() {
         BlackRose
       </a>
       <ul style={{ display: "inline-flex", padding: "0rem" }}>
-        <li>About</li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
         <li>Projects</li>
         <li>Blog</li>
       </ul>
