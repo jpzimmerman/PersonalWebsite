@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import About from "./pages/About";
+import React from "react";
 import Projects from "./pages/Projects";
 import { Routes, Route } from "react-router-dom";
 
