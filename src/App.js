@@ -6,8 +6,8 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <html lang="en">
-      <div className="App">
+    <>
+      <section className="App">
         <header>
           <meta charSet="UTF-8" />
           <meta
@@ -16,18 +16,17 @@ function App() {
           />
           <title>Joshua Zimmerman, Software Engineer</title>
         </header>
-        <body>
-          <div id="root"></div>
+        <main>
+          <section id="root"></section>
           <Navbar></Navbar>
           <p>Joshua Zimmerman</p>
-        </body>
-      </div>
-
+        </main>
+      </section>
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
-    </html>
+    </>
   );
 }
 
