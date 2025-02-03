@@ -25,6 +25,23 @@ body {
 .nav li {
   height: 100%;
   padding: 0.5rem;
+  animation: linear;
+  animation-name: intro-from-right;
+  animation-duration: 0.8s;
+}
+
+@keyframes intro-from-right {
+  0% {
+    transform: translate(20rem);
+  }
+
+  50% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    left: 0%;
+  }
 }
 
 .nav li:hover {
