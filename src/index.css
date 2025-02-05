@@ -7,27 +7,54 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.nav {
+.navbar-container {
+  position: relative;
+  display: flex;
+  vertical-align: middle;
+  width: 100vw;
+  height: 15vh;
+}
+
+.profile-image {
+  aspect-ratio: 1/1;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  position: absolute;
+  padding: 1rem;
+  z-index: 1;
+}
+
+nav {
   background-color: black;
   color: white;
   display: flex;
   justify-content: center;
   justify-items: center;
-  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 12rem;
+  line-height: 5vh;
+  width: 100vw;
+  height: 10vh;
+  z-index: 0;
 }
 
-.nav ul {
+nav ul {
   gap: 4rem;
   justify-content: center;
   list-style: none;
+  vertical-align: middle;
+  display: table;
 }
 
-.nav li {
+nav li {
   height: 100%;
-  padding: 0.5rem;
+  padding: 0.25rem;
   animation: linear;
   animation-name: intro-from-right;
   animation-duration: 0.8s;
+  font: bold 300px;
 }
 
 @keyframes intro-from-right {
@@ -44,12 +71,12 @@ body {
   }
 }
 
-.nav li:hover {
+nav li:hover {
   background-color: gray;
   opacity: 80%;
 }
 
-.nav a {
+nav a {
   text-decoration: none;
   color: white;
 }
