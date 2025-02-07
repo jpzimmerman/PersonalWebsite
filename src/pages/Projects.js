@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Projects() {
-  return <p>Projects</p>;
+  return (
+    <section className="landing-body">
+      <h1>Projects</h1>
+    </section>
+  );
 }
