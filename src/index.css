@@ -38,6 +38,7 @@ nav {
   width: 100vw;
   height: 8vh;
   z-index: 0;
+  box-shadow: 0 0 1rem 0.25rem white;
 }
 
 nav ul {
@@ -53,7 +54,7 @@ nav li {
   padding: 0.25rem;
   animation: linear;
   animation-name: intro-from-right;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   font: bold 300px;
 }
 
@@ -86,7 +87,13 @@ code {
     monospace;
 }
 
+body {
+  background-color: rgba(24, 24, 24, 0.98);
+}
 .landing-body {
+  padding-top: 1rem;
   padding-left: 2rem;
+  color: white;
+  background-color: rgba(74, 74, 74, 0.8);
   width: 50vw;
 }
