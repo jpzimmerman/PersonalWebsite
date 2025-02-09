@@ -20,7 +20,6 @@ function App() {
         <main>
           <section id="root"></section>
           <Navbar></Navbar>
-          <section className="landing-body"></section>
         </main>
       </section>
       <Routes>
