@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import React from "react";
@@ -16,14 +16,17 @@ function App() {
             content="width=device-width, initial-scale=1.0"
           />
           <title>Joshua Zimmerman, Software Engineer</title>
+          <link rel="icon" href="../public/logo192.png" type="image/png"></link>
         </header>
         <main>
           <section id="root"></section>
           <Navbar></Navbar>
+          <section>
+            <Home />
+          </section>
         </main>
       </section>
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>

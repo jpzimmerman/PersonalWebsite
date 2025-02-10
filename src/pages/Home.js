@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <section className="landing-body">
       <h3>Joshua Zimmerman, Software Engineer</h3>
+      <hr></hr>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
         elementum arcu. Nullam porta nibh eu tempor convallis. Phasellus eget

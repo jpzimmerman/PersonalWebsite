@@ -1,0 +1,131 @@
+nav {
+  background: linear-gradient(to bottom right, darkblue 1%, black 90%);
+  color: white;
+  display: inline-block;
+  padding-left: 12rem;
+  line-height: 1;
+  width: 100vw;
+  height: 6rem;
+  z-index: 0;
+  box-shadow: 0 0 1rem 0.25rem white;
+}
+
+.nav-header {
+  height: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  animation: linear;
+  animation: intro-from-right 0.45s;
+}
+
+.nav-header:hover {
+  background-color: gray;
+}
+
+.navbar-container {
+  position: relative;
+  display: flex;
+  vertical-align: middle;
+  width: 100vw;
+  height: 15vh;
+  /* animation: navbar-color-shift 3s infinite; */
+}
+
+.navbar-banner {
+  z-index: 0;
+  color: white;
+  position: absolute;
+  padding-top: 1rem;
+  padding-left: 0rem;
+  width: 20vw;
+  line-height: 30px !important;
+  height: 4vh;
+  float: left;
+  font: 30px Calibri;
+}
+.navbar-subtitle {
+  font: 18px Arial;
+}
+
+.nav-total-section {
+  position: relative;
+  display: flex;
+}
+
+.nav-buttons-section {
+  position: relative;
+  align-content: left;
+  display: flex;
+  float: right;
+  line-height: 5rem;
+  width: 75vw;
+  height: 6rem;
+}
+
+@keyframes intro-from-right {
+  0% {
+    transform: translate(20rem);
+  }
+
+  50% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes navbar-color-shift {
+  0% {
+    background: linear-gradient(to bottom right, darkblue 0%, black);
+  }
+
+  50% {
+    background: linear-gradient(to top left, black, black);
+  }
+
+  100% {
+    background: linear-gradient(to top left, darkblue 80%, black);
+  }
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  align-content: center;
+  background-color: #44444493;
+  width: 20%;
+  box-shadow: 0 1rem 2rem 0 rgba(127, 127, 127, 0.9);
+  z-index: 1;
+  margin-top: 1%;
+  padding-left: 1%;
+  border-radius: 10%;
+  height: 1rem;
+}
+
+.dropdown-button {
+  height: 20%;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  text-align: center;
+  float: none;
+  color: white;
+  display: flex;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(97, 95, 95, 0.507);
+  border-radius: 10%;
+}
