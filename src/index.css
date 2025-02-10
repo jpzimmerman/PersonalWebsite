@@ -18,6 +18,16 @@ body {
   border: 5px solid slategray;
 }
 
+.socials-link-button {
+  width: 3rem;
+  height: 3rem;
+  color: white;
+}
+
+.socials-section {
+  align-items: center;
+}
+
 nav a {
   text-decoration: none;
   color: white;
@@ -26,6 +36,10 @@ nav a {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+page-content {
+  display: inline-block;
 }
 
 body {
@@ -38,6 +52,7 @@ body {
   background-color: rgba(74, 74, 74, 0.8);
   width: 25vw;
   border: 2px solid rgba(233, 233, 233, 0.15);
+  float: left;
   border-radius: 5%;
   margin-top: 5rem;
   margin-left: 3%;

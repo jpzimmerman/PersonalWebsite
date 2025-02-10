@@ -1,9 +1,24 @@
 import React from "react";
+import githublogo from "../content/images/github-link-logo.svg";
 
 export default function Home() {
   return (
     <section className="landing-body">
       <h3>Joshua Zimmerman, Software Engineer</h3>
+      <section className="socials-section">
+        <a
+          href="https://github.com/jpzimmerman"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={githublogo}
+            alt="link to GitHub profile"
+            className="socials-link-button"
+            target="_blank"
+          ></img>
+        </a>
+      </section>
       <hr></hr>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non

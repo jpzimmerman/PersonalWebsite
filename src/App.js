@@ -21,7 +21,7 @@ function App() {
         <main>
           <section id="root"></section>
           <Navbar></Navbar>
-          <section>
+          <section className="page-content">
             <Home />
           </section>
         </main>
