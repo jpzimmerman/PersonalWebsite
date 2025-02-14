@@ -102,15 +102,11 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  align-content: center;
   background-color: #44444493;
   width: 20%;
-  box-shadow: 0 1rem 2rem 0 rgba(127, 127, 127, 0.9);
+  box-shadow: 0 0rem 0rem 0 rgba(127, 127, 127, 0.9);
   z-index: 1;
-  margin-top: 1%;
-  padding-left: 1%;
   border-radius: 10%;
-  height: 1rem;
 }
 
 .dropdown-button {
@@ -128,4 +124,5 @@ nav {
 .dropdown-content a:hover {
   background-color: rgba(97, 95, 95, 0.507);
   border-radius: 10%;
+  z-index: 1;
 }

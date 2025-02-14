@@ -20,7 +20,7 @@ export default function Home() {
         </a>
       </section>
       <hr></hr>
-      <p>
+      <p className="landing-body-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
         elementum arcu. Nullam porta nibh eu tempor convallis. Phasellus eget
         faucibus enim. Sed efficitur urna nec risus dapibus, eget commodo eros

@@ -49,11 +49,17 @@ body {
   padding-top: 10rem;
   padding: 1%;
   color: white;
-  background-color: rgba(74, 74, 74, 0.8);
+  background-color: rgba(94, 94, 94, 0.75);
   width: 25vw;
   border: 2px solid rgba(233, 233, 233, 0.15);
   float: left;
   border-radius: 5%;
   margin-top: 5rem;
   margin-left: 3%;
+  opacity: 85%;
+  z-index: 0;
+}
+
+.landing-body-text {
+  z-index: 1;
 }
