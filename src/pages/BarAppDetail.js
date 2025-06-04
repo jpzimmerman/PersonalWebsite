@@ -12,6 +12,7 @@ export default function BarAppDetail() {
         <ul>
           <li>Backend: .NET 9.0</li>
           <li>Frontend: Angular 19</li>
+          <li>Inventory Micro-Frontend: React</li>
           <li>Database: SQL Server, MySQL</li>
           <li>Cloud platform: Azure</li>
           <li>Infrastructure-as-Code: Terraform</li>
