@@ -25,7 +25,7 @@ export default function Navbar() {
             <section className="dropdown nav-header">
               Projects
               <div className="dropdown-content">
-                <Link to="/about">BarNone Bar App</Link>
+                <Link to="/barapp">BarNone Bar App</Link>
                 <Link to="/projects">Empathy Generator</Link>
                 <Link to="/about">Project Rubicon</Link>
               </div>

@@ -16,6 +16,7 @@ export default function Home() {
             alt="link to GitHub profile"
             className="socials-link-button"
             target="_blank"
+            title="GitHub profile"
           ></img>
         </a>
       </section>

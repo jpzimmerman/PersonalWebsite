@@ -4,6 +4,7 @@ import About from "./pages/About";
 import React from "react";
 import Projects from "./pages/Projects";
 import { Routes, Route } from "react-router-dom";
+import BarAppDetail from "./pages/BarAppDetail";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/barapp" element={<BarAppDetail />} />
       </Routes>
     </>
   );
