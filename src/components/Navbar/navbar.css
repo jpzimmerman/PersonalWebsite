@@ -5,9 +5,14 @@ nav {
   padding-left: 12rem;
   line-height: 1;
   width: 100vw;
-  height: 6rem;
+  height: 8rem;
   z-index: 0;
   box-shadow: 0 0 1rem 0.25rem white;
+}
+
+nav,
+.nav-buttons-section {
+  height: 7rem;
 }
 
 .nav-header {
@@ -19,7 +24,7 @@ nav {
 }
 
 .nav-header:hover {
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.61);
 }
 
 .navbar-container {
@@ -59,7 +64,6 @@ nav {
   float: right;
   line-height: 5rem;
   width: 75vw;
-  height: 6rem;
 }
 
 @keyframes intro-from-right {
@@ -118,11 +122,11 @@ nav {
   text-align: center;
   float: none;
   color: white;
-  display: flex;
+  display: block;
 }
 
 .dropdown-content a:hover {
   background-color: rgba(97, 95, 95, 0.507);
   border-radius: 10%;
-  z-index: 1;
+  z-index: 100;
 }
