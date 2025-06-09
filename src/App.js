@@ -4,7 +4,7 @@ import About from "./pages/About";
 import React from "react";
 import Projects from "./pages/Projects";
 import { Routes, Route } from "react-router-dom";
-import BarAppDetail from "./pages/BarAppDetail";
+import BarAppDetail from "./pages/barappdetail/BarAppDetail";
 
 function App() {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BarAppDetail() {
   return (
-    <section className="landing-body">
+    <section className="landing-body landing-body-detail">
       <h3>BarNone - Cocktail Menu</h3>
       <hr></hr>
       <p className="landing-body-text">
