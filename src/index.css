@@ -1,4 +1,10 @@
 body {
+  background-color: rgba(24, 24, 24, 0.98);
+  background-image: url("./content/images/abstract-art-bg.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -32,9 +38,6 @@ page-content {
   display: inline-block;
 }
 
-body {
-  background-color: rgba(24, 24, 24, 0.98);
-}
 .landing-body {
   padding-top: 10rem;
   padding: 1%;
@@ -54,6 +57,7 @@ body {
 .landing-body-detail {
   width: 45vw;
   height: 40vh;
+  backdrop-filter: blur(10px);
 }
 
 .landing-body-text {
