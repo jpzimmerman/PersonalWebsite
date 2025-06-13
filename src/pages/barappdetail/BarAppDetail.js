@@ -5,6 +5,11 @@ export default function BarAppDetail() {
     <section className="landing-body landing-body-detail">
       <h3>BarNone - Cocktail Menu</h3>
       <hr></hr>
+      <br></br>
+      BarNone is a full-stack Web application that allows users to order and
+      customize cocktails. The backend API serves a menu, accepts orders, and
+      allows an admin to maintain an inventory, while the decoupled frontend
+      allows a developer to build a cocktail menu around a given theme.
       <p className="landing-body-text">
         <h4>
           <strong>Tech Stack</strong>
@@ -20,10 +25,6 @@ export default function BarAppDetail() {
         </ul>
         <br></br>
       </p>
-      BarNone is a full-stack Web application that allows users to order and
-      customize cocktails. The backend API serves a menu, accepts orders, and
-      allows an admin to maintain an inventory, while the decoupled frontend
-      allows a developer to build a cocktail menu around a given theme.
     </section>
   );
 }
