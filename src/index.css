@@ -8,9 +8,10 @@ body {
 }
 
 .socials-link-button {
-  width: 3rem;
-  height: 3rem;
+  width: 2.9rem;
+  height: 2.9rem;
   color: white;
+  padding: 0.2rem;
 }
 
 .socials-section {
@@ -46,6 +47,7 @@ body {
   margin-top: 5rem;
   margin-left: 3%;
   opacity: 85%;
+  backdrop-filter: blur(10px);
   z-index: 0;
 }
 
