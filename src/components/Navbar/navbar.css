@@ -19,8 +19,7 @@ nav,
   height: 100%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  animation: linear;
-  animation: intro-from-right 0.45s;
+  animation: intro-from-right linear 0.45s;
 }
 
 .nav-header:hover {
@@ -65,34 +64,6 @@ nav,
   width: 75vw;
 }
 
-@keyframes intro-from-right {
-  0% {
-    transform: translate(20rem);
-  }
-
-  50% {
-    transform: translateX(2rem);
-  }
-
-  100% {
-    left: 0%;
-  }
-}
-
-@keyframes navbar-color-shift {
-  0% {
-    background: linear-gradient(to bottom right, darkblue 0%, black);
-  }
-
-  50% {
-    background: linear-gradient(to top left, black, black);
-  }
-
-  100% {
-    background: linear-gradient(to top left, darkblue 80%, black);
-  }
-}
-
 .dropdown {
   float: left;
   overflow: hidden;
@@ -131,6 +102,50 @@ nav,
   background-color: rgba(97, 95, 95, 0.507);
   border-radius: 10%;
   z-index: 100;
+}
+
+.profile-image {
+  aspect-ratio: 1/1;
+  width: 9em;
+  height: 9rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 999;
+  margin: 1rem;
+  border: 5px solid slategray;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+
+@keyframes intro-from-right {
+  0% {
+    transform: translate(20rem);
+  }
+
+  50% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes navbar-color-shift {
+  0% {
+    background: linear-gradient(to bottom right, darkblue 0%, black);
+  }
+
+  50% {
+    background: linear-gradient(to top left, black, black);
+  }
+
+  100% {
+    background: linear-gradient(to top left, darkblue 80%, black);
+  }
 }
 
 @media screen and (max-width: 768px) {

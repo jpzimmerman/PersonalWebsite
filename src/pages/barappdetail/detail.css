@@ -1,0 +1,46 @@
+.detail-page {
+  animation: intro-from-left linear 0.8s;
+}
+
+.detail-page-text-body {
+  animation: text-fade-in linear 1s;
+}
+
+@keyframes intro-from-left {
+  0% {
+    opacity: 0%;
+    width: 5%;
+  }
+
+  40% {
+    width: 5%;
+  }
+
+  50% {
+    width: 20%;
+  }
+
+  60% {
+    width: 36%;
+  }
+
+  100% {
+    opacity: 100%;
+    width: 45%;
+  }
+}
+
+@keyframes text-fade-in {
+  0% {
+    visibility: hidden;
+    opacity: 0%;
+  }
+
+  85% {
+    opacity: 15%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}

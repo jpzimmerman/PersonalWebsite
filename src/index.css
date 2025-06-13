@@ -7,22 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.profile-image {
-  aspect-ratio: 1/1;
-  width: 9em;
-  height: 9rem;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 999;
-  margin: 1rem;
-  border: 5px solid slategray;
-}
-
-.profile-image:hover {
-  transform: scale(1.1);
-  transition: all 0.4s;
-}
-
 .socials-link-button {
   width: 3rem;
   height: 3rem;
@@ -66,7 +50,7 @@ body {
 }
 
 .landing-body-detail {
-  width: 45vw !important;
+  width: 45vw;
   height: 40vh;
 }
 
