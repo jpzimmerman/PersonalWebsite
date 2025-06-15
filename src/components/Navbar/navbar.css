@@ -20,6 +20,7 @@ nav,
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   animation: intro-from-right linear 0.45s;
+  z-index: 999;
 }
 
 .nav-header:hover {
@@ -60,25 +61,24 @@ nav,
   align-content: left;
   display: flex;
   float: right;
-  line-height: 5rem;
+  line-height: 7rem;
   width: 75vw;
+  z-index: 999;
 }
 
 .dropdown {
   float: left;
   overflow: hidden;
-  z-index: 999;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
   position: absolute;
-  z-index: 999;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #44444493;
   width: 20%;
   box-shadow: 0 0rem 0rem 0 rgba(127, 127, 127, 0.9);
@@ -87,7 +87,7 @@ nav,
 }
 
 .dropdown-button {
-  height: 20%;
+  height: 10%;
 }
 
 .dropdown-content a {
@@ -96,12 +96,13 @@ nav,
   float: none;
   color: white;
   display: block;
+  z-index: 999;
 }
 
 .dropdown-content a:hover {
   background-color: rgba(97, 95, 95, 0.507);
   border-radius: 10%;
-  z-index: 100;
+  z-index: 999;
 }
 
 .profile-image {
