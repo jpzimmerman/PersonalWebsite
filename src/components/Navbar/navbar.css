@@ -20,7 +20,6 @@ nav,
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   animation: intro-from-right linear 0.45s;
-  z-index: 999;
 }
 
 .nav-header:hover {
@@ -33,6 +32,7 @@ nav,
   vertical-align: middle;
   width: 100vw;
   height: 15vh;
+  z-index: 999;
 }
 
 .navbar-banner {
@@ -63,7 +63,6 @@ nav,
   float: right;
   line-height: 7rem;
   width: 75vw;
-  z-index: 999;
 }
 
 .dropdown {
@@ -80,10 +79,10 @@ nav,
   display: none;
   position: relative;
   background-color: #44444493;
-  width: 20%;
-  box-shadow: 0 0rem 0rem 0 rgba(127, 127, 127, 0.9);
-  z-index: 999;
+  width: 18%;
+  box-shadow: 0 0rem 0rem 0 rgba(127, 127, 127, 1.9);
   border-radius: 10%;
+  backdrop-filter: blur(50px);
 }
 
 .dropdown-button {
@@ -100,7 +99,7 @@ nav,
 }
 
 .dropdown-content a:hover {
-  background-color: rgba(97, 95, 95, 0.507);
+  background-color: rgba(97, 95, 95, 0.97);
   border-radius: 10%;
   z-index: 999;
 }
