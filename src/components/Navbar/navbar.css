@@ -152,4 +152,9 @@ nav,
   .navbar-subtitle {
     visibility: collapse;
   }
+
+  .dropdown-content {
+    width: 50%;
+    right: 50%;
+  }
 }

@@ -52,5 +52,6 @@
 @media screen and (max-width: 768px) {
   .detail-page {
     max-height: 90%;
+    max-width: 95%;
   }
 }
