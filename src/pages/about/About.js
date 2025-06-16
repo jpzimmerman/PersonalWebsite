@@ -6,12 +6,10 @@ export default function About() {
       <h3>About Me</h3>
       <hr></hr>
       <p>
-        I bring an embedded design perspective to every project I undertake. I
-        strive to make sure that the software experiences I deliver to my
+        I strive to make sure that the software experiences I deliver to my
         clients are seamless, intuitive, and deliver as much value as possible.
-        I seek to foster a culture of continuous improvement with my clients,
-        always keeping a line of communication open so I can deliver constant
-        improvement to their software experience.
+        I believe in fostering a culture of continuous improvement with my
+        clients, aiming to deliver an ever-evolving software experience.
       </p>
     </section>
   );

@@ -72,10 +72,11 @@ page-content {
 
 .landing-body-text {
   z-index: 0;
+  max-height: 90%;
 }
 
 @media screen and (max-width: 768px) {
   .landing-body-detail {
-    height: 70vh;
+    max-height: 90%;
   }
 }

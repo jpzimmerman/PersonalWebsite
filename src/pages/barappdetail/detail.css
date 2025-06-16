@@ -3,6 +3,7 @@
   backdrop-filter: blur(5px);
   position: relative;
   z-index: 0;
+  height: 40%;
 }
 
 .detail-page-text-body {
@@ -45,5 +46,11 @@
 
   100% {
     opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .detail-page {
+    max-height: 90%;
   }
 }
