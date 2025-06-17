@@ -3,11 +3,12 @@
   backdrop-filter: blur(5px);
   position: relative;
   z-index: 0;
-  height: 40%;
+  height: auto;
 }
 
 .detail-page-text-body {
   animation: text-fade-in linear 1s;
+  font-family: "Arial", sans-serif;
 }
 
 @keyframes intro-from-left {
@@ -51,7 +52,8 @@
 
 @media screen and (max-width: 768px) {
   .detail-page {
+    height: auto;
     max-height: 90%;
-    max-width: 95%;
+    max-width: 100%;
   }
 }

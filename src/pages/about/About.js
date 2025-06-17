@@ -6,10 +6,15 @@ export default function About() {
       <h3>About Me</h3>
       <hr></hr>
       <p>
-        I strive to make sure that the software experiences I deliver to my
-        clients are seamless, intuitive, and deliver as much value as possible.
-        I believe in fostering a culture of continuous improvement with my
-        clients, aiming to deliver an ever-evolving software experience.
+        <h3>My Philosophy</h3>
+        These days, clients deserve a software experience that is secure,
+        reliable, and supported by engineers committed to quality and continuous
+        improvement. I believe in assuming{" "}
+        <strong> maximum personal ownership</strong> over every application in
+        my care, and in using my craft to deliver the{" "}
+        <strong>greatest possible impact</strong> for our clients. I celebrate
+        the successes delivered by my applications, and take personal
+        responsiblity for their failures.
       </p>
     </section>
   );

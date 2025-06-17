@@ -38,7 +38,7 @@ export default function TitleCard() {
       </section>
       <hr></hr>
       <p className="landing-body-text">
-        Experienced full-stack software engineer, looking for an opportunity to
+        Seasoned full-stack software engineer, looking for an opportunity to
         apply unique synergy of technical skills and client service experience
         to craft impactful software applications.
       </p>
