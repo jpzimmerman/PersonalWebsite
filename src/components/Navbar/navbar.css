@@ -41,9 +41,9 @@ nav,
   position: absolute;
   padding-top: 1rem;
   padding-left: 0rem;
-  width: 30vw;
+  width: 18vw;
   line-height: 30px !important;
-  height: 4vh;
+  height: 7vh;
   float: left;
   font: 30px Calibri;
 }
@@ -60,7 +60,7 @@ nav,
   position: relative;
   align-content: left;
   display: flex;
-  padding-left: 15rem;
+  padding-left: 16rem;
   float: center;
   line-height: 7rem;
   width: 40vw;
@@ -80,7 +80,7 @@ nav,
   display: none;
   position: relative;
   background-color: #44444493;
-  width: 50%;
+  width: 40%;
   right: 20%;
   box-shadow: 0 0rem 0rem 0 rgba(127, 127, 127, 1.9);
   border-radius: 10%;
@@ -169,6 +169,6 @@ nav,
 
   .dropdown-content {
     width: 90%;
-    right: 40%;
+    right: 10%;
   }
 }

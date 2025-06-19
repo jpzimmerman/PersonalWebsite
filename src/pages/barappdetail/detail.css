@@ -11,6 +11,14 @@
   font-family: "Arial", sans-serif;
 }
 
+.collapsible-header {
+  cursor: pointer;
+}
+
+.collapsible-content {
+  display: none;
+}
+
 @keyframes intro-from-left {
   0% {
     opacity: 0%;
