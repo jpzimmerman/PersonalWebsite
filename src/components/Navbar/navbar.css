@@ -157,6 +157,13 @@ nav,
     max-width: 10vw;
   }
 
+  .nav-header {
+    height: 100%;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    animation: intro-from-right linear 0.45s;
+  }
+
   .navbar-subtitle {
     visibility: collapse;
   }

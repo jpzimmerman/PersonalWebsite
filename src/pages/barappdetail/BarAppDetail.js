@@ -5,6 +5,8 @@ import { FaCaretDown, FaCaretLeft } from "react-icons/fa6";
 export default function BarAppDetail() {
   const summaryButtonRef = useRef(document.getElementById("summary-header"));
   const stackButtonRef = useRef(null);
+  const mediaButtonRef = useRef(null);
+  const summaryTextRef = useRef(null);
   let isSummaryCollapsed = true;
 
   useEffect(() => {
@@ -16,7 +18,8 @@ export default function BarAppDetail() {
   function onClick() {
     let content = this.nextElementSibling;
     content.style.display = content.style.display != "block" ? "block" : "none";
-    isSummaryCollapsed = false;
+    isSummaryCollapsed = true;
+    summaryTextRef.current.classList.add("detail-page-text-body");
   }
 
   function summaryCollapsedCaret() {
@@ -36,7 +39,7 @@ export default function BarAppDetail() {
           <strong>Summary </strong>
           {summaryCollapsedCaret()}
         </h4>
-        <span id="summary-text">
+        <span id="summary-text" ref={summaryTextRef}>
           BarNone is a full-stack Web application that allows users to order and
           customize cocktails. The backend API serves a menu, accepts orders,
           and allows an admin to maintain an inventory, while the decoupled
@@ -60,7 +63,12 @@ export default function BarAppDetail() {
             <li>Mobile app for vendor: React Native</li>
           </ul>
         </span>
-        <br></br>
+        <span className="landing-body-text" ref={mediaButtonRef}>
+          <h4>
+            <strong>Media </strong>
+            <FaCaretDown />
+          </h4>
+        </span>
       </section>
     </section>
   );

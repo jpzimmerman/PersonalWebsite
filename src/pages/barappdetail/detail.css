@@ -7,7 +7,7 @@
 }
 
 .detail-page-text-body {
-  animation: text-fade-in linear 1s;
+  animation: text-fade-in linear 0.6s;
   font-family: "Arial", sans-serif;
 }
 
