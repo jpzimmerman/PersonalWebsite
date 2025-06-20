@@ -5,6 +5,7 @@ import React from "react";
 import Projects from "./pages/Projects";
 import { Routes, Route } from "react-router-dom";
 import BarAppDetail from "./pages/barappdetail/BarAppDetail";
+import EmpathyDetail from "./pages/empathydetail/EmpathyGeneratorDetail";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/barapp" element={<BarAppDetail />} />
+        <Route path="/empathygen" element={<EmpathyDetail />} />
       </Routes>
     </>
   );
