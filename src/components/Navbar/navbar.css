@@ -78,10 +78,10 @@ nav,
 
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
   background-color: #44444493;
   width: 40%;
-  right: 20%;
+  max-width: 300px;
   box-shadow: 0 0rem 0rem 0 rgba(127, 127, 127, 1.9);
   border-radius: 10%;
   backdrop-filter: blur(5px);

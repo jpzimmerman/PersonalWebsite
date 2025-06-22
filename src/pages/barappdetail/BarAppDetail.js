@@ -28,7 +28,9 @@ export default function BarAppDetail() {
 
   return (
     <section className="landing-body landing-body-detail detail-page">
-      <h3>BarNone - Cocktail Menu</h3>
+      <h3 className="card-title">
+        <strong>BarNone - Cocktail Menu</strong>
+      </h3>
       <hr></hr>
       <section className="detail-page-text-body">
         <h4

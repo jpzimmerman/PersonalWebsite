@@ -6,6 +6,10 @@
   height: auto;
 }
 
+.card-title {
+  animation: text-fade-in linear 0.8s;
+}
+
 .detail-page-text-body {
   animation: text-fade-in linear 0.6s;
   font-family: "Arial", sans-serif;
@@ -42,6 +46,7 @@
 @keyframes text-fade-in {
   0% {
     visibility: hidden;
+    text-wrap: nowrap;
     opacity: 0%;
   }
 
@@ -50,6 +55,7 @@
   }
 
   100% {
+    text-wrap: wrap;
     opacity: 100%;
   }
 }

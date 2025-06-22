@@ -12,7 +12,7 @@ export default function About() {
         {" "}
         personal ownership
       </strong>{" "}
-      over every application in my care, and in using my craft to deliver the{" "}
+      over every application in my care, and in using my craft to deliver{" "}
       <strong>maximum impact</strong> for our clients. I celebrate the successes
       delivered by my applications, and take personal responsiblity for their
       failures.
