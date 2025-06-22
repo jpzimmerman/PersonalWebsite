@@ -34,14 +34,14 @@ body {
     brightness(109%) contrast(99%);
 }
 
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 nav a {
   text-decoration: none;
   color: white;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 page-content {
@@ -78,18 +78,12 @@ page-content {
 .landing-body-text {
   z-index: 0;
   max-height: 90%;
-  font-family: -apple-system, BlinkMacSystemFont, "Courier" serif;
+  font: 1.2rem "Calibri", sans-serif;
 }
 
 @media screen and (max-width: 768px) {
   body {
     max-width: 800px;
-  }
-
-  .landing-body-text {
-    z-index: 0;
-    max-height: 90%;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica" sans-serif;
   }
 
   .landing-body-detail {

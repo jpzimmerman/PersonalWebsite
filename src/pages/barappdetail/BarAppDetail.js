@@ -46,7 +46,7 @@ export default function BarAppDetail() {
           frontend allows a developer to build a cocktail menu around a given
           theme.
         </span>
-        <span className="landing-body-text" ref={stackButtonRef}>
+        <span ref={stackButtonRef}>
           <h4>
             <strong>Tech Stack </strong>
             <FaCaretDown />
@@ -63,7 +63,7 @@ export default function BarAppDetail() {
             <li>Mobile app for vendor: React Native</li>
           </ul>
         </span>
-        <span className="landing-body-text" ref={mediaButtonRef}>
+        <span ref={mediaButtonRef}>
           <h4>
             <strong>Media </strong>
             <FaCaretDown />

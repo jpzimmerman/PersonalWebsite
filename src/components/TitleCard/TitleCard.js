@@ -2,7 +2,7 @@ import React from "react";
 import "./titlecard.css";
 import githublogo from "../../content/images/github-link-logo.svg";
 import linkedinlogo from "../../content/images/InBug-White.png";
-import { FaEnvelope, FaPhone } from "react-icons/fa6";
+import { FaEnvelope, FaFilePdf, FaPhone } from "react-icons/fa6";
 
 export default function TitleCard() {
   return (
@@ -38,10 +38,19 @@ export default function TitleCard() {
       </section>
       <hr></hr>
       <p className="landing-body-text">
-        Seasoned full-stack software engineer, looking for an opportunity to
-        apply unique synergy of technical skills and client service experience
-        to craft impactful software applications.
+        Experienced full-stack software engineer, looking for an opportunity to
+        apply wide range of technical skills to craft impactful software
+        applications.
       </p>
+      <br></br>
+      <a
+        href="https://jzshowcasesa.blob.core.windows.net/showcase-docs/JoshZimmerman_Resume.pdf"
+        download
+        title="Download My Resume"
+      >
+        <FaFilePdf style={{ scale: 1.25, color: "lightgreen" }} /> Download My
+        Résumé
+      </a>
       <br></br>
       <h3>Contact</h3>
       Cell:
