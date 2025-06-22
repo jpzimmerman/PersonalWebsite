@@ -12,6 +12,7 @@ export default function BarAppDetail() {
   useEffect(() => {
     summaryButtonRef.current.addEventListener("click", onClick, true);
     stackButtonRef.current.addEventListener("click", onClick, false);
+    mediaButtonRef.current.addEventListener("click", onClick, false);
     isSummaryCollapsed = summaryButtonRef.current.style.display !== "block";
   }, []);
 
@@ -65,7 +66,7 @@ export default function BarAppDetail() {
             <li>Mobile app for vendor: React Native</li>
           </ul>
         </span>
-        <span ref={mediaButtonRef}>
+        <span ref={mediaButtonRef} className="collapsible-header">
           <h4>
             <strong>Media </strong>
             <FaCaretDown />
