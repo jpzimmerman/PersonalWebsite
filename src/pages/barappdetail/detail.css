@@ -19,6 +19,64 @@
   cursor: pointer;
 }
 
+.media-carousel-container {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  &::scroll-button(left) {
+    float: left;
+    content: "⬅" / "Scroll Left";
+  }
+  &::scroll-button(right) {
+    float: right;
+    content: "⮕" / "Scroll Right";
+    margin-right: -30px;
+  }
+}
+
+::scroll-button(*) {
+  position: relative;
+  inset: -8em -1em;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+.media-carousel {
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-flow: column;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  width: 40%;
+}
+
+.media-carousel-item:nth-child(odd) {
+  background: rgba(127, 127, 180, 0.4);
+}
+
+.media-carousel-item::scroll-button(:right) {
+  position: relative;
+  content: ">";
+}
+
+.media-carousel-item {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  text-align: center;
+  border: dotted 1px gray;
+  border-radius: 5%;
+  height: 150px !important;
+  overflow-y: hidden;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.media-carousel-item > img {
+  width: 100%;
+  object-fit: contain;
+}
+
 @keyframes intro-from-left {
   0% {
     opacity: 0%;
@@ -63,7 +121,7 @@
 @media screen and (max-width: 768px) {
   .detail-page {
     height: auto;
-    max-height: 90%;
+    max-height: 150%;
     max-width: 100%;
   }
 }

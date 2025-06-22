@@ -71,6 +71,25 @@ export default function BarAppDetail() {
             <FaCaretDown />
           </h4>
         </span>
+        <section className="media-carousel-container">
+          <section className="media-carousel">
+            <section className="media-carousel-item">
+              <img src="https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr00.JPG"></img>
+            </section>
+            <div className="media-carousel-item">
+              <img src="https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr01.JPG"></img>
+            </div>
+            <div className="media-carousel-item">
+              <img src="https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr02.JPG"></img>
+            </div>
+            <div className="media-carousel-item">
+              <img src="https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr03.JPG"></img>
+            </div>
+            <div className="media-carousel-item">
+              <img src="https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr04.JPG"></img>
+            </div>
+          </section>
+        </section>
       </section>
     </section>
   );
