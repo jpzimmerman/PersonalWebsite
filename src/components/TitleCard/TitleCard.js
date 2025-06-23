@@ -54,9 +54,13 @@ export default function TitleCard() {
       <br></br>
       <h3>Contact</h3>
       Cell:
-      <a href="tel:+0000000000" target="_blank" rel="noreferrer">
+      <a
+        href={process.env.REACT_APP_PHONE_RAW}
+        target="_blank"
+        rel="noreferrer"
+      >
         <button className="contact-button" target="_blank" rel="noreferrer">
-          <FaPhone /> (000)000-0000
+          <FaPhone /> {process.env.REACT_APP_PHONE_FORMATTED}
         </button>
       </a>
       <br></br>
