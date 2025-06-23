@@ -69,7 +69,7 @@ export default function TitleCard() {
         href="mailto:zimmerman.joshua.p@gmail.com"
         target="_blank"
         rel="noreferrer"
-        alt="Send email to zimmerman.joshua.p@gmail.com"
+        title="Send email to zimmerman.joshua.p@gmail.com"
       >
         <button className="contact-button" target="_blank" rel="noreferrer">
           <FaEnvelope /> Email
