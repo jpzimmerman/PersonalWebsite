@@ -47,7 +47,7 @@ jobs:
           output_location: "build" # Built app content directory - optional
           github_id_token: ${{ steps.idtoken.outputs.result }}
         env:
-          REACT_APP_PHONE_RAW: +17348900956
+          REACT_APP_PHONE_RAW: tel:+17348900956
           REACT_APP_PHONE_FORMATTED: (734)890-0956
 
           ###### End of Repository/Build Configurations ######
