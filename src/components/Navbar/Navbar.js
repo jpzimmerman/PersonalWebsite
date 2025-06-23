@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import "./navbar.css";
-import profilepicture from "../../content/images/profile-image.jpg";
 
 export default function Navbar() {
   return (
     <section className="navbar-container">
-      <img src={profilepicture} alt="Candidate" className="profile-image"></img>
+      <img
+        src="https://jzshowcasesa.blob.core.windows.net/showcase-images/profile-image-2025.jpg"
+        alt="Candidate"
+        className="profile-image"
+      ></img>
       <section className="nav-total-section">
         <nav>
           <section className="navbar-banner">

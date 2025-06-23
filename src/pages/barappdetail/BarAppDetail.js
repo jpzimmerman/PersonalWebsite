@@ -1,6 +1,8 @@
 import { React, useRef, useEffect } from "react";
 import "./detail.css";
 import { FaCaretDown, FaCaretLeft } from "react-icons/fa6";
+import Dashboard from "../../components/Dashboard/Dashboard";
+import ImageModal from "../../components/ImageModal/ImageModal";
 
 export default function BarAppDetail() {
   const summaryButtonRef = useRef(document.getElementById("summary-header"));
@@ -20,7 +22,6 @@ export default function BarAppDetail() {
     let content = this.nextElementSibling;
     content.style.display = content.style.display != "block" ? "block" : "none";
     isSummaryCollapsed = true;
-    summaryTextRef.current.classList.add("detail-page-text-body");
   }
 
   function summaryCollapsedCaret() {
@@ -32,6 +33,7 @@ export default function BarAppDetail() {
       <h3 className="card-title">
         <strong>BarNone - Cocktail Menu</strong>
       </h3>
+      <ImageModal />
       <hr></hr>
       <section className="detail-page-text-body">
         <h4

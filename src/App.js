@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import { Routes, Route } from "react-router-dom";
 import BarAppDetail from "./pages/barappdetail/BarAppDetail";
 import EmpathyDetail from "./pages/empathydetail/EmpathyGeneratorDetail";
+import ImageModal from "./components/ImageModal/ImageModal";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Navbar></Navbar>
           <section className="page-content">
             <Home />
+            <ImageModal show={false} />
           </section>
         </main>
       </section>
