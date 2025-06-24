@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import BarAppDetail from "./pages/barappdetail/BarAppDetail";
 import EmpathyDetail from "./pages/empathydetail/EmpathyGeneratorDetail";
 import ImageModal from "./components/ImageModal/ImageModal";
+import TitleCard from "./components/TitleCard/TitleCard";
 
 function App() {
   return (
@@ -25,12 +26,13 @@ function App() {
           <section id="root"></section>
           <Navbar></Navbar>
           <section className="page-content">
-            <Home />
+            <TitleCard />
             <ImageModal show={false} />
           </section>
         </main>
       </section>
       <Routes>
+        <Route path="" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/barapp" element={<BarAppDetail />} />

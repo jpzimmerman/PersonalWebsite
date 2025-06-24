@@ -12,3 +12,14 @@
 .contact-button:active {
   background-color: lightgreen;
 }
+
+@media screen and (max-width: 640px) {
+  .title-card {
+    height: auto;
+  }
+
+  .landing-body {
+    width: auto;
+    max-width: 15%;
+  }
+}
