@@ -1,16 +1,15 @@
+import { useState } from "react";
 import "./styles.css";
 
-const ImageModal = ({ handleClose, show, children }) => {
-  const showHideClassName = show ? "modal display-block" : "modal display-none";
+const ImageModal = ({ isOpen, handleClose, children }) => {
+  const showHideClassName = isOpen
+    ? "modal display-block"
+    : "modal display-none";
 
   return (
     <section className={showHideClassName}>
-      <section className="modal-main">
-        {children}
-        <button type="button" onClick={handleClose}>
-          Close
-        </button>
-      </section>
+      <section className="modal-main">{children}</section>
+      <button onClick={handleClose}>Close</button>
     </section>
   );
 };

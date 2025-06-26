@@ -2,21 +2,38 @@
   position: fixed;
   top: 0;
   left: 0;
-  margin: 10% 10%;
-  width: 80%;
-  height: 75%;
-  background: rgba(0, 0, 0, 0.9);
+  margin: 20% 0%;
+  width: 90vw;
+  max-width: 1200px;
+  height: 75vh;
+  background: rgba(0, 0, 0, 255);
   z-index: 999;
+  transform: translate(10%, -10%);
+  border-radius: 3%;
+  opacity: 100% !important;
 }
 
 .modal-main {
   position: fixed;
-  background: white;
-  width: 60%;
+  background: black;
+  max-width: 1200px;
   height: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 2%;
+  left: 2%;
+  bottom: 2%;
+  right: 2%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 100%;
+  }
+}
+
+.modal-image {
+  max-width: 96%;
+  max-height: 96%;
 }
 
 .display-block {
