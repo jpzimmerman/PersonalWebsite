@@ -43,14 +43,15 @@ nav,
   position: sticky;
   padding-top: 1rem;
   padding-left: 0rem;
-  width: 18vw;
-  line-height: 30px !important;
+  width: 25vw;
+  line-height: 26px !important;
   height: 7vh;
   float: left;
-  font: 30px Calibri;
+  font: 32px Calibri;
 }
 .navbar-subtitle {
-  font: 18px Arial;
+  padding-bottom: 1rem;
+  font: 14px Arial;
 }
 
 .nav-total-section {
