@@ -8,6 +8,7 @@ nav {
   height: 8rem;
   z-index: 0;
   box-shadow: 1rem 0 1rem 0.2rem white;
+  position: sticky;
 }
 
 nav,
@@ -27,18 +28,19 @@ nav,
 }
 
 .navbar-container {
-  position: relative;
+  position: fixed;
   display: flex;
   vertical-align: middle;
   width: 100vw;
   height: 15vh;
   z-index: 999;
+  position: sticky;
 }
 
 .navbar-banner {
   z-index: 10;
   color: white;
-  position: absolute;
+  position: sticky;
   padding-top: 1rem;
   padding-left: 0rem;
   width: 18vw;
@@ -57,10 +59,10 @@ nav,
 }
 
 .nav-buttons-section {
-  position: relative;
+  position: sticky;
   align-content: left;
   display: flex;
-  padding-left: 20%;
+  padding-left: 1%;
   float: center;
   line-height: 7rem;
   width: 40vw;
@@ -114,7 +116,7 @@ nav,
   position: absolute;
   z-index: 999;
   margin: 1rem;
-  border: 5px solid slategray;
+  border: 2px solid slategray;
 }
 
 .profile-image:hover {
@@ -151,10 +153,26 @@ nav,
 }
 
 @media screen and (max-width: 640px) {
+  .profile-image {
+    aspect-ratio: 1/1;
+    width: 6em;
+    height: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    margin: 0.5rem;
+  }
+
+  nav,
+  .nav-buttons-section {
+    height: 4.75rem;
+  }
+
   .navbar-banner {
     visibility: collapse;
     font: 30px "Arial", sans-serif;
     max-width: 10vw;
+    width: 0%;
   }
 
   .nav-header {
@@ -169,9 +187,12 @@ nav,
   }
 
   .nav-buttons-section {
-    float: center;
+    float: left;
     width: 50%;
-    padding-left: 0rem;
+    line-height: 4.7rem;
+    position: relative;
+    align-content: left;
+    display: flex;
   }
 
   .dropdown-content {
