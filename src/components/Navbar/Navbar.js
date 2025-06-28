@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import "./navbar.css";
+import { FaCaretDown } from "react-icons/fa6";
 
 export default function Navbar() {
   return (
@@ -26,7 +27,7 @@ export default function Navbar() {
               About
             </Link>
             <section className="dropdown nav-header">
-              Projects
+              Projects <FaCaretDown />
               <div className="dropdown-content">
                 <Link to="/barapp">BarNone Bar App</Link>
                 <Link to="/empathygen">Empathy Generator</Link>
