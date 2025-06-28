@@ -1,4 +1,4 @@
-import { React, Component } from "react";
+import React from "react";
 
 const CarouselImage = ({ source, ref, onclick }) => {
   return (

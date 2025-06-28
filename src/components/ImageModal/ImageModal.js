@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./styles.css";
+import "./modal.css";
 
 const ImageModal = ({ isOpen, handleClose, children }) => {
   const showHideClassName = isOpen

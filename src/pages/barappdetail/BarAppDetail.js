@@ -4,6 +4,7 @@ import { FaCaretDown, FaCaretLeft } from "react-icons/fa6";
 import Dashboard from "../../components/Dashboard/Dashboard";
 import ImageModal from "../../components/ImageModal/ImageModal";
 import { wait } from "@testing-library/user-event/dist/cjs/utils/index.js";
+import CarouselImage from "../../components/CarouselImage/CarouselImage";
 
 export default function BarAppDetail() {
   const summaryButtonRef = useRef(document.getElementById("summary-header"));
@@ -105,6 +106,13 @@ export default function BarAppDetail() {
                   src="https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr00.JPG"
                   ref={imageRef}
                 ></img>
+              </section>
+              <section className="media-carousel-item">
+                <CarouselImage
+                  source={
+                    "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr04.JPG"
+                  }
+                ></CarouselImage>
               </section>
               <div className="media-carousel-item">
                 <img
