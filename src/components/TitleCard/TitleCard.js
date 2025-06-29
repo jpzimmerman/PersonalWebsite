@@ -14,11 +14,22 @@ export default function TitleCard() {
       .getElementById("title-card")
       .style.setProperty(
         "max-width",
-        location.pathname == "/" ? "320px" : "100px",
+        !navigator.userAgent.toLowerCase().includes("android") ||
+          location.pathname == "/"
+          ? "300px"
+          : "100px",
         "important"
       );
     document.getElementById("title-card-summary").style.display =
-      location.pathname !== "/" && window.screen.width < 640 ? "none" : "block";
+      location.pathname != "/" && window.screen.width < 640 ? "none" : "block";
+    document
+      .getElementById("title-card-summary")
+      .style.setProperty(
+        "display",
+        location.pathname !== "/" && window.screen.width < 640
+          ? "none"
+          : "block"
+      );
   }, [location]);
 
   return (

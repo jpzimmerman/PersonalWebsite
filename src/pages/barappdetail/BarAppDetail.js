@@ -75,8 +75,8 @@ export default function BarAppDetail() {
             orders, and allows an admin to maintain an inventory, while the
             decoupled frontend allows a developer to build a cocktail menu
             around a given theme. My first iteration also includes options
-            allowing the user to filter the menu by tastes and request
-            substitute ingredients. <br></br>
+            allowing the user to filter the menu by tastes, as well as request
+            ingredient substitutions. <br></br>
             <br></br>I built this application for use in my role as designated
             bartender in my Dungeons & Dragons group.
           </span>
