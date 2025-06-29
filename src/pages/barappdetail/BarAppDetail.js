@@ -74,9 +74,9 @@ export default function BarAppDetail() {
             and customizing drinks. The backend API serves a menu, accepts
             orders, and allows an admin to maintain an inventory, while the
             decoupled frontend allows a developer to build a cocktail menu
-            around a given theme. My first iteration also includes options
-            allowing the user to filter the menu by tastes, as well as request
-            ingredient substitutions. <br></br>
+            around a given theme. My first iteration of the frontend also
+            includes options allowing the user to filter the menu by tastes, as
+            well as request ingredient substitutions. <br></br>
             <br></br>I built this application for use in my role as designated
             bartender in my Dungeons & Dragons group.
           </span>
