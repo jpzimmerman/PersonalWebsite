@@ -17,7 +17,7 @@ export default function TitleCard() {
   }, [location]);
 
   return (
-    <section id="title-card" className="landing-body title-card">
+    <section id="title-card" className="title-card-body title-card">
       <h3>
         <Link to="/">Joshua Zimmerman, Software Engineer</Link>
       </h3>

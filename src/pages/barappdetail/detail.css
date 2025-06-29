@@ -24,20 +24,22 @@
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  border-radius: 5%;
+  position: relative;
+
   &::scroll-button(left) {
+    inset: -8em -1em;
     float: left;
     content: "⬅" / "Scroll Left";
   }
   &::scroll-button(right) {
-    float: right;
+    inset: -8em 41.5em;
     content: "⮕" / "Scroll Right";
-    margin-right: -30px;
   }
 }
 
 ::scroll-button(*) {
   position: relative;
-  inset: -8em -1em;
   padding: 0.5em;
   border-radius: 50%;
 }

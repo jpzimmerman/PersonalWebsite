@@ -49,7 +49,6 @@ page-content {
 }
 
 .landing-body {
-  padding-top: 10rem;
   padding: 1%;
   color: white;
   background-color: rgba(94, 94, 94, 0.75);
@@ -57,15 +56,11 @@ page-content {
   border: 2px solid rgba(233, 233, 233, 0.15);
   float: left;
   border-radius: 5%;
-  margin-top: 5rem;
+  margin-top: 1rem;
   margin-left: 3%;
   opacity: 85%;
   backdrop-filter: blur(10px);
   z-index: 0;
-}
-
-.title-card {
-  max-width: 320px;
 }
 
 .landing-body-detail {
