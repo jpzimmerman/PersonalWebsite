@@ -14,7 +14,7 @@
 }
 
 .title-card {
-  max-width: 400px;
+  max-width: 320px !important;
   margin-top: 10rem;
   padding: 1%;
   color: white;
@@ -33,6 +33,7 @@
 @media screen and (max-width: 640px) {
   .title-card {
     margin-top: 0rem;
+    max-width: 320px;
     height: auto;
   }
 

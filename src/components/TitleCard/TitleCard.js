@@ -10,8 +10,13 @@ export default function TitleCard() {
   let location = useLocation();
 
   useEffect(() => {
-    document.getElementById("title-card").style.maxWidth =
-      location.pathname == "/" ? "50%" : "20%";
+    document
+      .getElementById("title-card")
+      .style.setProperty(
+        "max-width",
+        location.pathname == "/" ? "320px" : "100px",
+        "important"
+      );
     document.getElementById("title-card-summary").style.display =
       location.pathname !== "/" && window.screen.width < 640 ? "none" : "block";
   }, [location]);
