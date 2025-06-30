@@ -3,12 +3,13 @@
   top: 0;
   left: 0;
   margin: 15% -4%;
-  width: 90vw;
+  width: 70vw;
   max-width: 1200px;
   height: 75vh;
+  max-height: auto;
   background: rgba(0, 0, 0, 255);
   z-index: 999;
-  transform: translate(10%, -10%);
+  transform: translate(20vw, -10vw);
   border-radius: 3%;
   opacity: 100% !important;
 }
@@ -18,22 +19,26 @@
   background: black;
   max-width: 1200px;
   height: auto;
+  align-content: center;
+  align-items: center;
+  margin: auto;
   top: 2%;
   left: 2%;
   bottom: 2%;
   right: 2%;
 
   img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    max-width: 96vmax;
+    max-height: 96%;
+    align-content: center;
     object-fit: fill;
     opacity: 100%;
   }
 }
 
 .modal-image {
-  max-width: 96%;
-  max-height: 96%;
+  aspect-ratio: 1/1;
 }
 
 .display-block {

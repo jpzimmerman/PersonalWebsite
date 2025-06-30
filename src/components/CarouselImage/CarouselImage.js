@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import "./carouselimage.css";
 
 const CarouselImage = ({ source, ref, onclick }) => {
+  const itemRef = useRef(null);
+
+  useEffect(() => {
+    itemRef.current.addEventListener("click", onclick, false);
+  });
+
+  function onClick() {}
+
   return (
-    <section>
-      <img src={source}></img>
+    <section className="carousel-image">
+      <img src={source} ref={itemRef}></img>
     </section>
   );
 };

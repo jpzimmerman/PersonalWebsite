@@ -64,6 +64,7 @@
 }
 
 .media-carousel-item {
+  cursor: pointer;
   scroll-snap-align: center;
   scroll-snap-stop: always;
   text-align: center;

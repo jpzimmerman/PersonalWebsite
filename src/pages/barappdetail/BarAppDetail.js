@@ -11,9 +11,6 @@ export default function BarAppDetail() {
   const stackButtonRef = useRef(null);
   const mediaButtonRef = useRef(null);
   const summaryTextRef = useRef(null);
-  const imageRef = useRef(null);
-  const imageRef2 = useRef(null);
-  const imageRef3 = useRef(null);
   const imageRef4 = useRef(null);
   const imageRef5 = useRef(null);
   let isSummaryCollapsed = true;
@@ -25,11 +22,6 @@ export default function BarAppDetail() {
     summaryButtonRef.current.addEventListener("click", onClick, true);
     stackButtonRef.current.addEventListener("click", onClick, false);
     mediaButtonRef.current.addEventListener("click", onClick, false);
-    imageRef.current.addEventListener("click", openModal, false);
-    imageRef2.current.addEventListener("click", openModal, false);
-    imageRef3.current.addEventListener("click", openModal, false);
-    imageRef4.current.addEventListener("click", openModal, false);
-    imageRef5.current.addEventListener("click", openModal, false);
     isSummaryCollapsed = summaryButtonRef.current.style.display !== "block";
   }, []);
 
@@ -104,45 +96,48 @@ export default function BarAppDetail() {
             </h4>
           </span>
           <section className="media-carousel-container">
-            <section className="media-carousel">
-              <section className="media-carousel-item">
-                <img
-                  src="https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr00.JPG"
-                  ref={imageRef}
-                ></img>
-              </section>
-              <section className="media-carousel-item">
+            <ul className="media-carousel">
+              <li className="media-carousel-item">
+                <CarouselImage
+                  source={
+                    "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr00.JPG"
+                  }
+                  onclick={openModal}
+                ></CarouselImage>
+              </li>
+              <li className="media-carousel-item">
+                <CarouselImage
+                  source={
+                    "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr01.JPG"
+                  }
+                  onclick={openModal}
+                ></CarouselImage>
+              </li>
+              <li className="media-carousel-item">
+                <CarouselImage
+                  source={
+                    "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr02.JPG"
+                  }
+                  onclick={openModal}
+                ></CarouselImage>
+              </li>
+              <li className="media-carousel-item">
+                <CarouselImage
+                  source={
+                    "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr03.JPG"
+                  }
+                  onclick={openModal}
+                ></CarouselImage>
+              </li>
+              <li className="media-carousel-item">
                 <CarouselImage
                   source={
                     "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr04.JPG"
                   }
+                  onclick={openModal}
                 ></CarouselImage>
-              </section>
-              <div className="media-carousel-item">
-                <img
-                  src="https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr01.JPG"
-                  ref={imageRef2}
-                ></img>
-              </div>
-              <div className="media-carousel-item">
-                <img
-                  src="https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr02.JPG"
-                  ref={imageRef3}
-                ></img>
-              </div>
-              <div className="media-carousel-item">
-                <img
-                  src="https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr03.JPG"
-                  ref={imageRef4}
-                ></img>
-              </div>
-              <div className="media-carousel-item">
-                <img
-                  src="https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr04.JPG"
-                  ref={imageRef5}
-                ></img>
-              </div>
-            </section>
+              </li>
+            </ul>
           </section>
         </section>
       </section>
