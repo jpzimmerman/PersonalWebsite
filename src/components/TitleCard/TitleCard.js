@@ -73,7 +73,7 @@ export default function TitleCard() {
       </p>
       <br></br>
       <a
-        href="https://jzshowcasesa.blob.core.windows.net/showcase-docs/JoshZimmerman_Resume.pdf"
+        href="https://jzshowcasesa.blob.core.windows.net/showcase-docs/JoshuaZimmerman-Resume.pdf"
         download
         title="Download My Resume"
       >
