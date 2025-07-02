@@ -1,0 +1,61 @@
+.media-carousel-container {
+  max-width: 600px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 5%;
+  position: relative;
+
+  &::scroll-button(left) {
+    inset: -8em -1em;
+    float: left;
+    content: "⬅" / "Scroll Left";
+  }
+  &::scroll-button(right) {
+    inset: -8em 41.5em;
+    content: "⮕" / "Scroll Right";
+  }
+}
+
+::scroll-button(*) {
+  position: relative;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+.media-carousel {
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-flow: column;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  width: 40%;
+}
+
+.media-carousel-item:nth-child(odd) {
+  background: rgba(127, 127, 180, 0.4);
+}
+
+.media-carousel-item::scroll-button(:right) {
+  position: relative;
+  content: ">";
+}
+
+.media-carousel-item {
+  cursor: pointer;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  text-align: center;
+  border: dotted 1px gray;
+  border-radius: 5%;
+  height: 150px !important;
+  overflow-y: hidden;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.media-carousel-item > img {
+  width: 100%;
+  object-fit: contain;
+}

@@ -4,7 +4,8 @@ import { FaCaretDown, FaCaretLeft } from "react-icons/fa6";
 import Dashboard from "../../components/Dashboard/Dashboard";
 import ImageModal from "../../components/ImageModal/ImageModal";
 import { wait } from "@testing-library/user-event/dist/cjs/utils/index.js";
-import CarouselImage from "../../components/CarouselImage/CarouselImage";
+import CarouselImage from "../../components/Carousel/CarouselImage/CarouselImage";
+import Carousel from "../../components/Carousel/Carousel";
 
 export default function BarAppDetail() {
   const summaryButtonRef = useRef(document.getElementById("summary-header"));
@@ -95,50 +96,7 @@ export default function BarAppDetail() {
               <FaCaretDown />
             </h4>
           </span>
-          <section className="media-carousel-container">
-            <ul className="media-carousel">
-              <li className="media-carousel-item">
-                <CarouselImage
-                  source={
-                    "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr00.JPG"
-                  }
-                  onclick={openModal}
-                ></CarouselImage>
-              </li>
-              <li className="media-carousel-item">
-                <CarouselImage
-                  source={
-                    "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr01.JPG"
-                  }
-                  onclick={openModal}
-                ></CarouselImage>
-              </li>
-              <li className="media-carousel-item">
-                <CarouselImage
-                  source={
-                    "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr02.JPG"
-                  }
-                  onclick={openModal}
-                ></CarouselImage>
-              </li>
-              <li className="media-carousel-item">
-                <CarouselImage
-                  source={
-                    "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr03.JPG"
-                  }
-                  onclick={openModal}
-                ></CarouselImage>
-              </li>
-              <li className="media-carousel-item">
-                <CarouselImage
-                  source={
-                    "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr04.JPG"
-                  }
-                  onclick={openModal}
-                ></CarouselImage>
-              </li>
-            </ul>
-          </section>
+          <Carousel onClickToExpand={openModal} />
         </section>
       </section>
     </section>
