@@ -1,10 +1,7 @@
-import { React, useRef, useEffect, useState } from "react";
+import { React, useRef, useEffect, useState, useMemo } from "react";
 import "./detail.css";
 import { FaCaretDown, FaCaretLeft } from "react-icons/fa6";
-import Dashboard from "../../components/Dashboard/Dashboard";
 import ImageModal from "../../components/ImageModal/ImageModal";
-import { wait } from "@testing-library/user-event/dist/cjs/utils/index.js";
-import CarouselImage from "../../components/Carousel/CarouselImage/CarouselImage";
 import Carousel from "../../components/Carousel/Carousel";
 
 export default function BarAppDetail() {
@@ -12,8 +9,6 @@ export default function BarAppDetail() {
   const stackButtonRef = useRef(null);
   const mediaButtonRef = useRef(null);
   const summaryTextRef = useRef(null);
-  const imageRef4 = useRef(null);
-  const imageRef5 = useRef(null);
   let isSummaryCollapsed = true;
 
   let [modalOpen, setModalOpen] = useState(false);
@@ -24,6 +19,16 @@ export default function BarAppDetail() {
     stackButtonRef.current.addEventListener("click", onClick, false);
     mediaButtonRef.current.addEventListener("click", onClick, false);
     isSummaryCollapsed = summaryButtonRef.current.style.display !== "block";
+  }, []);
+
+  const projectImagePaths = useMemo(() => {
+    return [
+      "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr00.JPG",
+      "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr01.JPG",
+      "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr02.JPG",
+      "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr03.JPG",
+      "https://jzshowcasesa.blob.core.windows.net/showcase-images/barapp-scr04.JPG",
+    ];
   }, []);
 
   function onClick() {
@@ -96,7 +101,10 @@ export default function BarAppDetail() {
               <FaCaretDown />
             </h4>
           </span>
-          <Carousel onClickToExpand={openModal} />
+          <Carousel
+            onClickToExpand={openModal}
+            imagePaths={projectImagePaths}
+          />
         </section>
       </section>
     </section>
