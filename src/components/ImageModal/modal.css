@@ -2,10 +2,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  margin: 15% -4%;
-  width: 70vw;
+  margin: 20% -8%;
+  width: 80vw;
   max-width: 1200px;
-  height: 75vh;
+  min-height: 60vh;
   max-height: auto;
   background: rgba(0, 0, 0, 255);
   z-index: 999;
@@ -18,7 +18,8 @@
   position: fixed;
   background: black;
   max-width: 1200px;
-  height: auto;
+  min-height: 50vh;
+  max-height: auto;
   align-content: center;
   align-items: center;
   margin: auto;
@@ -30,6 +31,7 @@
   img {
     width: 90%;
     max-width: 96vmax;
+    min-height: 40%;
     max-height: 96%;
     align-content: center;
     object-fit: fill;
@@ -38,7 +40,7 @@
 }
 
 .modal-image {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1.33;
 }
 
 .display-block {
