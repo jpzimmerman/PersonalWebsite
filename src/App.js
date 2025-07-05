@@ -38,7 +38,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/barapp" element={<BarAppDetail />} />
         <Route path="/empathygen" element={<EmpathyDetail />} />
-        <Route path="blog" element={<BlogView />} />
+        <Route path="/blog" element={<BlogView />} />
       </Routes>
     </>
   );
