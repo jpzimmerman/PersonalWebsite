@@ -8,6 +8,7 @@ import BarAppDetail from "./pages/barappdetail/BarAppDetail";
 import EmpathyDetail from "./pages/empathydetail/EmpathyGeneratorDetail";
 import ImageModal from "./components/ImageModal/ImageModal";
 import TitleCard from "./components/TitleCard/TitleCard";
+import BlogView from "./pages/blog/BlogView";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/barapp" element={<BarAppDetail />} />
         <Route path="/empathygen" element={<EmpathyDetail />} />
+        <Route path="blog" element={<BlogView />} />
       </Routes>
     </>
   );
