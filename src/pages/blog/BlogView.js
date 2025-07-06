@@ -1,3 +1,10 @@
+import BlogPost from "./BlogPost/BlogPost";
+
 export default function BlogView() {
-  return <p>Blog works!</p>;
+  return (
+    <section>
+      <p>Blog works!</p>
+      <BlogPost />
+    </section>
+  );
 }
