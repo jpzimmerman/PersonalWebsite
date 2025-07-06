@@ -1,0 +1,26 @@
+.engagement-section {
+  position: relative;
+  bottom: 2%;
+  font: 24px Calibri serif;
+}
+
+.reaction-button {
+  padding: 0rem 0.75rem;
+}
+
+.comment-button {
+  color: gainsboro;
+  padding: 0rem 0.75rem;
+}
+
+.blog-post-body-text {
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.landing-body {
+  position: relative;
+  width: 50%;
+  height: auto;
+}
