@@ -1,6 +1,23 @@
 import BlogPost from "./BlogPost/BlogPost";
+import { getBlogPosts } from "../../services/blogDataService";
+import { useEffect, useState } from "react";
 
 export default function BlogView() {
+  let [servicePosts, setData] = useState([]);
+
+  useEffect(() => {
+    async function retrieveBlogPosts() {
+      try {
+        const result = await getBlogPosts();
+        setData(result ?? []);
+      } catch (error) {
+        console.log(error);
+        setData([]);
+      }
+    }
+    retrieveBlogPosts();
+  }, []);
+
   const blogPosts = [
     {
       id: 0,
@@ -22,6 +39,13 @@ export default function BlogView() {
           <BlogPost title={item.title} bodyText={item.bodyText} />
         </section>
       ))}
+      <section>
+        {(servicePosts ?? []).map((item, index) => (
+          <section key={index}>
+            <BlogPost title={item.title} bodyText={item.bodyText} />
+          </section>
+        ))}
+      </section>
     </section>
   );
 }
