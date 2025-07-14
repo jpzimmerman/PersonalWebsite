@@ -14,7 +14,7 @@ export default function TitleCard() {
       .getElementById("title-card")
       .style.setProperty(
         "max-width",
-        !navigator.userAgent.toLowerCase().includes("android") ||
+        /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ||
           location.pathname == "/"
           ? "300px"
           : "100px",
