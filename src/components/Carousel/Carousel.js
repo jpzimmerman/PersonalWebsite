@@ -6,14 +6,26 @@ const Carousel = ({ imagePaths, onClickToExpand }) => {
   return (
     <section className="media-carousel-container">
       <ul className="media-carousel">
-        {imagePaths.map((item, index) => (
-          <li key={index} className="media-carousel-item">
-            <CarouselImage
-              source={item}
-              onclick={onClickToExpand}
-            ></CarouselImage>
-          </li>
-        ))}
+        <section className="carousel-item-group">
+          {imagePaths.map((item, index) => (
+            <li key={index} className="media-carousel-item">
+              <CarouselImage
+                source={item}
+                onclick={onClickToExpand}
+              ></CarouselImage>
+            </li>
+          ))}
+        </section>
+        <section aria-hidden="true" className="carousel-item-group">
+          {imagePaths.map((item, index) => (
+            <li key={index} className="media-carousel-item">
+              <CarouselImage
+                source={item}
+                onclick={onClickToExpand}
+              ></CarouselImage>
+            </li>
+          ))}
+        </section>
       </ul>
     </section>
   );

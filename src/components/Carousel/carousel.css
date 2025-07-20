@@ -15,6 +15,25 @@
     inset: -8em 41.5em;
     content: "⮕" / "Scroll Right";
   }
+
+  ::before,
+  ::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 150px;
+  }
+
+  ::before {
+    left: 0;
+    top: 0;
+  }
+
+  ::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(-180deg);
+  }
 }
 
 ::scroll-button(*) {
@@ -24,13 +43,25 @@
 }
 
 .media-carousel {
-  display: grid;
+  overflow: hidden;
+  display: flex;
   grid-auto-columns: 100%;
   grid-auto-flow: column;
   overscroll-behavior-x: contain;
   scrollbar-width: none;
   scroll-behavior: smooth;
-  width: 40%;
+  padding: 20px 0;
+  width: calc(120px * 20);
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .media-carousel-item:nth-child(odd) {
@@ -53,6 +84,13 @@
   overflow-y: hidden;
   align-content: center;
   vertical-align: middle;
+  width: 100%;
+}
+
+.carousel-item-group {
+  display: flex;
+  will-change: transform;
+  animation: scrolling 18s linear infinite;
 }
 
 .media-carousel-item > img {
