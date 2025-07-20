@@ -14,10 +14,10 @@ export default function TitleCard() {
       .getElementById("title-card")
       .style.setProperty(
         "max-width",
-        /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ||
-          location.pathname == "/"
-          ? "300px"
-          : "100px",
+        /iPhone|iPad|iPod|Android/.test(navigator.userAgent) &&
+          location.pathname !== "/"
+          ? "100px"
+          : "300px",
         "important"
       );
     document.getElementById("title-card-summary").style.display =
