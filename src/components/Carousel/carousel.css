@@ -52,6 +52,7 @@
   scroll-behavior: smooth;
   padding: 20px 0;
   width: calc(120px * 20);
+  animation: scrolling 30s linear infinite;
 }
 
 @keyframes scrolling {
@@ -90,7 +91,10 @@
 .carousel-item-group {
   display: flex;
   will-change: transform;
-  animation: scrolling 18s linear infinite;
+}
+
+.media-carousel:hover {
+  animation-play-state: paused;
 }
 
 .media-carousel-item > img {
