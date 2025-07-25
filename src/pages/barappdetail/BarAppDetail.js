@@ -76,7 +76,15 @@ export default function BarAppDetail() {
             includes options allowing the user to filter the menu by tastes, as
             well as request ingredient substitutions. <br></br>
             <br></br>I built this application for use in my role as designated
-            bartender in my Dungeons & Dragons group.
+            bartender in my Dungeons & Dragons group.<br></br>
+            <br></br>Link:{" "}
+            <a
+              href="https://legendslair-dwhrf9e3ceb4face.centralus-01.azurewebsites.net/"
+              target="_blank"
+              className="select-link"
+            >
+              Legends' Lair
+            </a>{" "}
           </span>
           <span ref={stackButtonRef}>
             <h4>

@@ -19,6 +19,14 @@
   cursor: pointer;
 }
 
+.select-link {
+  color: greenyellow;
+
+  :visited {
+    color: purple;
+  }
+}
+
 @keyframes intro-from-left {
   0% {
     opacity: 0%;
