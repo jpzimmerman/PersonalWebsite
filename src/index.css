@@ -21,7 +21,6 @@ body {
 
 .flex-child {
   flex: 1;
-  border: 2px dotted green;
   margin-right: 70%;
   height: 1px;
 }
