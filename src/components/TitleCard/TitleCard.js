@@ -13,12 +13,22 @@ export default function TitleCard() {
   const titleCardRef = useRef(null);
 
   useEffect(() => {
-    titleCardRef.current.style.display =
-      location.pathname != "/" && window.screen.width < 640 ? "none" : "block";
-    titleCardRef.current.style.opacity =
-      location.pathname !== "/" ? "100%" : "85%";
-    titleCardToggleButtonRef.current.style.visibility =
-      location.pathname != "/" ? "visible" : "hidden";
+    titleCardRef.current.style.setProperty(
+      "display",
+      location.pathname != "/" && window.screen.width < 640 ? "none" : "block"
+    );
+    titleCardRef.current.style.setProperty(
+      "margin-top",
+      location.pathname !== "/" ? "2%" : "5%"
+    );
+    titleCardRef.current.style.setProperty(
+      "opacity",
+      location.pathname !== "/" ? "100%" : "85%"
+    );
+    titleCardToggleButtonRef.current.style.setProperty(
+      "visibility",
+      location.pathname != "/" ? "visible" : "hidden"
+    );
   }, [location]);
 
   useEffect(() => {
