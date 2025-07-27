@@ -17,6 +17,8 @@ export default function TitleCard() {
       location.pathname != "/" && window.screen.width < 640 ? "none" : "block";
     titleCardRef.current.style.opacity =
       location.pathname !== "/" ? "100%" : "85%";
+    titleCardToggleButtonRef.current.style.visibility =
+      location.pathname != "/" ? "visible" : "hidden";
   }, [location]);
 
   useEffect(() => {
