@@ -9,6 +9,7 @@ body {
   background-color: rgba(24, 24, 24, 0.98);
   background-image: url("https://jzshowcasesa.blob.core.windows.net/showcase-images/abstract-art-bg.png");
   background-size: cover;
+  display: flex;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -16,6 +17,19 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Verdana", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.flex-child {
+  flex: 1;
+  border: 2px dotted green;
+  margin-right: 70%;
+  height: 1px;
+}
+
+.card-tab-container {
+  z-index: 99999;
+  width: auto;
+  visibility: visible;
 }
 
 .socials-link-button {
@@ -44,10 +58,6 @@ nav a {
   color: white;
 }
 
-page-content {
-  display: inline-block;
-}
-
 .landing-body {
   padding: 1%;
   color: white;
@@ -64,7 +74,7 @@ page-content {
 }
 
 .landing-body-detail {
-  width: 60vw;
+  width: 80vw;
   height: auto;
   backdrop-filter: blur(10px);
   z-index: 0;
@@ -76,13 +86,14 @@ page-content {
   font: 1.2rem "Calibri", sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
   .landing-body {
-    margin-top: 0.05rem;
+    margin-top: 1rem;
+    width: 500px !important;
   }
 
   .landing-body-detail {
     max-height: auto;
-    max-width: 90vw;
+    max-width: 80vw !important;
   }
 }

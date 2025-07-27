@@ -23,11 +23,17 @@ function App() {
           <title>Joshua Zimmerman, Software Engineer</title>
           <link rel="icon" href="../public/logo192.png" type="image/png"></link>
         </header>
-        <main>
+        <main className="page-content">
           <section id="root"></section>
           <Navbar></Navbar>
-          <section className="page-content">
-            <TitleCard />
+          <section>
+            <section
+              id="title=card-tab"
+              className="card-tab-container flex-child"
+            >
+              <TitleCard />
+              {/* <input type="button"></input> */}
+            </section>
             <ImageModal show={false} />
           </section>
         </main>
