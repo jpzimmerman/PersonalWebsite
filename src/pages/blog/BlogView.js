@@ -1,5 +1,5 @@
 import BlogPost from "./BlogPost/BlogPost";
-import { getBlogPosts } from "../../services/blogDataService";
+import { getBlogPosts, addLike } from "../../services/blogDataService";
 import { useEffect, useState } from "react";
 
 export default function BlogView() {
@@ -18,17 +18,23 @@ export default function BlogView() {
     retrieveBlogPosts();
   }, []);
 
+  const addLikeToPost = async (postId) => {
+    let result = await addLike(postId);
+  };
+
   const blogPosts = [
     {
       id: 0,
       title: "First Blog Post",
       bodyText: "This is body text for the top blog post on the page",
+      numberOfLikes: 3,
     },
     {
       id: 1,
       title: "Second Blog Post",
       bodyText:
         "This is body text for the bottom blog post on the page. It is meant to span multiple lines and test spacing. Next step is to load blog posts from the database using our Web service.",
+      numberOfLikes: 0,
     },
   ];
 
@@ -36,13 +42,23 @@ export default function BlogView() {
     <section>
       {blogPosts.map((item, index) => (
         <section key={index}>
-          <BlogPost title={item.title} bodyText={item.bodyText} />
+          <BlogPost
+            title={item.title}
+            bodyText={item.bodyText}
+            numberOfLikes={item.numberOfLikes}
+          />
         </section>
       ))}
       <section>
         {(servicePosts ?? []).map((item, index) => (
           <section key={index}>
-            <BlogPost title={item.title} bodyText={item.bodyText} />
+            <BlogPost
+              id={item._id}
+              title={item.title}
+              bodyText={item.bodyText}
+              numberOfLikes={item.numberOfLikes}
+              addLikeFunction={addLikeToPost}
+            />
           </section>
         ))}
       </section>
