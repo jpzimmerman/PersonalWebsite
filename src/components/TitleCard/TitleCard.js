@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./titlecard.css";
 import githublogo from "../../content/images/github-link-logo.svg";
 import linkedinlogo from "../../content/images/InBug-White.png";
@@ -11,6 +11,8 @@ export default function TitleCard() {
 
   const titleCardToggleButtonRef = useRef(null);
   const titleCardRef = useRef(null);
+
+  let [isTitleCardOpened, setTitleCardOpened] = useState(true);
 
   useEffect(() => {
     titleCardRef.current.style.setProperty(
@@ -35,17 +37,22 @@ export default function TitleCard() {
     titleCardToggleButtonRef.current.addEventListener(
       "click",
       toggleTitleCardView,
-      true
+      false
     );
   }, []);
 
   function toggleTitleCardView() {
-    titleCardRef.current.style.display =
-      titleCardRef.current.style.display != "block" ? "block" : "none";
+    setTitleCardOpened(isTitleCardOpened = !isTitleCardOpened);
+    
+    titleCardRef.current.style.setProperty(
+      "display",
+      titleCardRef.current.style.display == "none" ? "block" : "none"
+    );
   }
 
   return (
     <section className="title-card-container">
+      {isTitleCardOpened && <div className="title-card-page-overlay"></div>}
       <section
         id="title-card"
         className="title-card-body title-card"
@@ -91,6 +98,7 @@ export default function TitleCard() {
         <br></br>
         <a
           href="https://jzshowcasesa.blob.core.windows.net/showcase-docs/JoshuaZimmerman-Resume.pdf"
+          target="_blank"
           download
           title="Download My Resume"
         >

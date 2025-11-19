@@ -26,7 +26,10 @@ export default function EmpathyDetail() {
   }
 
   return (
-    <section className="landing-body landing-body-detail detail-page">
+    <section
+      id="project-detail"
+      className="landing-body landing-body-detail detail-page"
+    >
       <h3 className="card-title">
         Empathy Generator - VR Accessibility Training
       </h3>

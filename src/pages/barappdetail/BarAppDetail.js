@@ -53,7 +53,10 @@ export default function BarAppDetail() {
         handleClose={() => setModalOpen(false)}
         children={<img src={modalContent} className="modal-main modal-image" />}
       />
-      <section className="landing-body landing-body-detail detail-page">
+      <section
+        id="project-detail"
+        className="landing-body landing-body-detail detail-page"
+      >
         <h3 className="card-title">
           <strong>BarNone - Cocktail Menu</strong>
         </h3>
