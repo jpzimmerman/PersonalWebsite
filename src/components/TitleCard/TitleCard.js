@@ -11,6 +11,7 @@ export default function TitleCard() {
 
   const titleCardToggleButtonRef = useRef(null);
   const titleCardRef = useRef(null);
+  const titleCardOverlayRef = useRef(null);
 
   let [isTitleCardOpened, setTitleCardOpened] = useState(true);
 
@@ -31,6 +32,7 @@ export default function TitleCard() {
       "visibility",
       location.pathname != "/" ? "visible" : "hidden"
     );
+
   }, [location]);
 
   useEffect(() => {
@@ -40,6 +42,8 @@ export default function TitleCard() {
       false
     );
   }, []);
+
+  const isHomePage = () => location.pathname == "/";
 
   function toggleTitleCardView() {
     setTitleCardOpened(isTitleCardOpened = !isTitleCardOpened);
@@ -52,7 +56,7 @@ export default function TitleCard() {
 
   return (
     <section className="title-card-container">
-      {isTitleCardOpened && <div className="title-card-page-overlay"></div>}
+      {isTitleCardOpened && !isHomePage()&& <div className="title-card-page-overlay" ref={titleCardOverlayRef}></div>}
       <section
         id="title-card"
         className="title-card-body title-card"
