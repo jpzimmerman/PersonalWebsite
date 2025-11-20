@@ -4,7 +4,8 @@
   margin-top: 5rem;
   width: 2%;
   height: 10vh;
-  z-index: 999;
+  z-index: 10;
+  opacity: 80%;
 }
 
 .title-card-page-overlay {
@@ -15,7 +16,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3px);
-  display: none;
+  display: block;
 }
 
 .title-card-container {
@@ -23,6 +24,7 @@
   margin: 5%;
   display: block;
   z-index: 10;
+  max-width: 400px;
 }
 
 .title-card {
@@ -58,19 +60,29 @@
   background-color: lightgreen;
 }
 
+.collapsed {
+  width: 0px!important;
+}
+
+.title-card-page-overlay-block-display {
+  display: block;
+}
+
 @media screen and (max-width: 640px) {
     .title-card {
       margin-top: 0rem;
       width: 70vw !important;
-      max-width: 320px;
+      max-width: 320px!important;
       height: auto;
       position: relative;
     }
     
     .title-card-container {
       display: flex;
-      width: 600px;
+      width:max-content;
+      max-width: 600px;
     }
+    
 
     .title-card-body {
       width: auto;

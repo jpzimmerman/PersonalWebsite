@@ -12,6 +12,7 @@ export default function TitleCard() {
   const titleCardToggleButtonRef = useRef(null);
   const titleCardRef = useRef(null);
   const titleCardOverlayRef = useRef(null);
+  const titleCardContainerRef = useRef(null);
 
   let [isTitleCardOpened, setTitleCardOpened] = useState(true);
 
@@ -52,11 +53,12 @@ export default function TitleCard() {
       "display",
       titleCardRef.current.style.display == "none" ? "block" : "none"
     );
+
   }
 
   return (
-    <section className="title-card-container">
-      {isTitleCardOpened && !isHomePage()&& <div className="title-card-page-overlay" ref={titleCardOverlayRef}></div>}
+    <section className="title-card-container" ref={titleCardContainerRef}>
+      {!isTitleCardOpened && !isHomePage() && window.screen.width < 640 && <div className="title-card-page-overlay" ref={titleCardOverlayRef}></div>}
       <section
         id="title-card"
         className="title-card-body title-card"
