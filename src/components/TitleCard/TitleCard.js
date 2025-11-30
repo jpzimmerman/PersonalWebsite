@@ -71,27 +71,29 @@ export default function TitleCard() {
           <a
             href="https://www.linkedin.com/in/joshua-zimmerman-235810247/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            title="LinkedIn profile (opens in new window)"
           >
             <img
               src={linkedinlogo}
               alt="LinkedIn profile"
               className="socials-link-button"
               target="_blank"
-              title="LinkedIn profile"
+              rel="noopener noreferrer"
+              title="LinkedIn profile (opens in new window)"
             ></img>
           </a>
           <a
             href="https://github.com/jpzimmerman"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <img
               src={githublogo}
               alt="link to GitHub profile"
               className="socials-link-button filter-white"
               target="_blank"
-              title="GitHub profile"
+              title="GitHub profile (opens in new window)"
             ></img>
           </a>
         </section>
@@ -106,7 +108,7 @@ export default function TitleCard() {
           href="https://jzshowcasesa.blob.core.windows.net/showcase-docs/JoshuaZimmerman-Resume.pdf"
           target="_blank"
           download
-          title="Download My Resume"
+          title="Download My Resume (opens in new window)"
         >
           <FaFilePdf style={{ scale: 1.25, color: "lightgreen" }} /> Download My
           Résumé
